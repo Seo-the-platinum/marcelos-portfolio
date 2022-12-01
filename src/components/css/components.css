@@ -1,0 +1,13 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#light .skillsContainer li {
+    color: black;
+}
+
+.skillsContainer ul {
+    list-style: none;
+    text-align: left;
+}

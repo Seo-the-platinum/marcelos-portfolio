@@ -1,0 +1,11 @@
+#light .homeContainer h1{
+    color: black;
+}
+
+#light .homeContainer h3 {
+    color: black;
+}
+
+#dark .homeContainer h1 {
+    color: white;
+}
