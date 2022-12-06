@@ -1,22 +1,33 @@
 export const experience = [
     {
-        link: 'https://www.barnesandnoble.com/w/metaverse-101-the-meta-geeks/1141705721',
+        link: 'images/metaverse101.jpg',
         role: 'Narrator',
         title: 'Metaverse 101',
+        type: 'image'
     },
     {
-        link: null,
-        role: 'Sugar Rush',
-        title: 'My Hero Academia Abridged',
+        link: "https://www.youtube-nocookie.com/embed/xJGloY3gsto",
+        role: 'Liam',
+        title: 'Dear Diary...Would he like me if I was prettier?',
+        type: 'Video'
     },
     {
-        link: null,
-        role: 'Shiina Ichiritsu',
-        title: 'Demon Chic',
+        link: 'https://www.youtube-nocookie.com/embed/ELTk_Ew2Pds',
+        role: 'Raihan',
+        title: `Iono's Steam Clip`,
+        type: 'Video'
     },
     {
-        link: null,
+        link: 'https://www.youtube-nocookie.com/embed/PnLFUnA-mO8',
         role: 'Miku',
-        title: 'Miku the Gardevoir'
+        title: 'Trans Sawk',
+        type: 'Video'
+    },
+    {
+        link: 'https://www.youtube-nocookie.com/embed/EW97f0fZmWA',
+        role: 'Miku',
+        title: 'Trans Sawk 1.2',
+        type: 'Video'
     }
 ]
+

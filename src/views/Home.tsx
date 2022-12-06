@@ -1,14 +1,14 @@
 import React from 'react'
 import Skills from '../components/Skills'
+import Profile from '../components/profile/Profile'
+import Work from '../components/Work'
 import './css/views.css'
 
 const Home = () => {
   return (
     <div className='homeContainer'>
-      <h1>Marcelo Flores</h1>
-      <h3>Throat Talent</h3>
-      <Skills/>
-      <a href='https://www.voices.com/profile/marceloflores#skill=voice-over'>Demos</a>
+      <Profile/>
+      <Work/>
     </div>
   )
 }
