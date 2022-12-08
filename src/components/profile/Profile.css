@@ -1,0 +1,10 @@
+.profileContainer {
+    display: flex;
+    max-width: 100%;
+}
+
+.profilePic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}

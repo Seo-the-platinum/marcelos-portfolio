@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './views/Home'
 import About from './views/About'
 import Contact from './views/Contact'
+import Work from './views/Work'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 
@@ -23,7 +24,8 @@ const App = ()=> {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/work' element={<Work/>}/>
         </Routes>
       </div>
     </GlobalContext.Provider>
