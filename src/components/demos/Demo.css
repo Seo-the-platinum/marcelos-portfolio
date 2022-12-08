@@ -1,0 +1,27 @@
+#dark audio {
+    color-scheme: dark;
+}
+
+#light audio {
+    color-scheme: light;
+}
+
+.demosContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.demosContainer h3 {
+    position: relative;
+}
+
+.demosContainer h3::after {
+    background: linear-gradient(to right, #26024a, #5306a1, #065ea1, #09baeb);
+    border-radius: 4px;
+    bottom: -5px;
+    content: '';
+    height: 2px;
+    left: 10%;
+    position: absolute;
+    width: 75%;
+}

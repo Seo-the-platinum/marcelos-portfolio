@@ -1,0 +1,12 @@
+#dark h3 {
+    color: white;
+}
+
+.entryContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#light h3 {
+    color: black;
+}

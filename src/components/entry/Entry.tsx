@@ -1,4 +1,5 @@
 import React from 'react'
+import './Entry.css'
 
 interface EntryProps {
     title: string;
@@ -14,7 +15,6 @@ const WorkEntry = ({title, link, role, type}: EntryProps) => {
             <iframe
                 src={link}
                 title={title} 
-                frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
         }
         <h3>{title}</h3>

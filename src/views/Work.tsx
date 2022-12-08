@@ -1,6 +1,6 @@
 import React from 'react'
 import { experience } from '../utils/experience'
-import Entry from '../components/WorkEntry'
+import Entry from '../components/entry/Entry'
 
 const Work= () => {
   return (
