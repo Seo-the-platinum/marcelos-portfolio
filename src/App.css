@@ -52,9 +52,9 @@
 }
 
 #light.App {
-  background: linear-gradient(#04e09b,#016f15);
+  background: linear-gradient(45deg,#016f15, #04e09b, white);
 }
 
 #dark.App {
-  background: linear-gradient(#01401b, #026c4b);
+  background: linear-gradient(45deg,#000f07,#012912, #06e49e);
 }

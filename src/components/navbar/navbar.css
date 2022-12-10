@@ -3,11 +3,28 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 75px;
+    position: sticky;
+    top: 20px;
 }
 
 .tab {
     background-color: rgb(34, 36, 34);
     padding: 0.5em;
+}
+
+#dark .tab:hover {
+    border-color: white;
+}
+#light .tab:hover {
+    border-color: blue;
+}
+
+#dark .tab:focus {
+    outline-color: white;
+}
+
+#light .tab:focus {
+    outline-color: blue;
 }
 
 .tabsContainer {
