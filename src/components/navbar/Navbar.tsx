@@ -6,13 +6,14 @@ import './navbar.css'
 
 const Navbar = () => {
   //need to fix these errors
-    const {theme, toggleTheme}  = useContext(GlobalContext)
+    // const {theme, toggleTheme} = useContext(GlobalContext)
+    const context = useContext(GlobalContext)
   return (
     <div className='navbarContainer'>
         <Switch 
-          checked={theme === 'dark'}
+          checked={context?.theme === 'dark'}
           checkedIcon={false}
-          onChange={toggleTheme}
+          onChange={context?.toggleTheme}
           uncheckedIcon={false}
           />
           <Tabs/>
