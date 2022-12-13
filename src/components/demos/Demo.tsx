@@ -24,8 +24,9 @@ const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoPr
         <h3>{title}</h3>
         <div className="audio">
             {
-                !playing ? <button className='play' onClick={togglePlay}><FaRegPlayCircle/></button>:
-                <button className='pause' onClick={togglePlay}><FaRegPauseCircle/></button>
+                <button className='play/pause' onClick={togglePlay}>
+                    {!playing ? <FaRegPlayCircle/>: <FaRegPauseCircle/>}
+                </button>
             }
             <audio src={source}/>
         </div>
