@@ -2,7 +2,7 @@ import React from 'react'
 import Skills from '../components/Skills'
 import Profile from '../components/profile/Profile'
 import Work from './Work'
-import Demo from '../components/demos/Demo'
+import Demo from '../components/demos/Demos'
 import './css/views.css'
 
 const Home = () => {
