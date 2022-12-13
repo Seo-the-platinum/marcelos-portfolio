@@ -1,33 +1,32 @@
-import React, { useState } from 'react'
+import React, { MouseEventHandler, useEffect, useState } from 'react'
 import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa"
 
 interface DemoProps {
+    handlePausePlay: (id: string)=> void;
     id: string;
+    pause: (id: string)=> void;
+    play: (id: string)=> void;
     playing: boolean;
     source: string;
     title: string;
-    handlePausePlay: (id: string)=> void;
 }
 
-const Demo = ({id, playing, source, title, handlePausePlay}: DemoProps) => {
-    const audioEl = document.querySelector('audio')
-    const handleClick = (e: React.MouseEvent) => {
-        // handlePausePlay(id)
-        if (playing) {
-            audioEl?.pause()
-        } else {
-            console.log('playing')
-            audioEl?.play()
-        }
+const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoProps) => {
+    const togglePlay = (e: MouseEventHandler) => {
+        handlePausePlay(id)
     }
-    console.log(source)
+    useEffect(()=> {
+        playing ? play(id) : pause(id)
+    },[playing])
+
   return (
     <div className='audioContainer'>
         <h3>{title}</h3>
         <div className="audio">
-            <button className='play/pause' onClick={handleClick}>
-                {!playing ? <FaRegPlayCircle/> : <FaRegPauseCircle/>}
-            </button>
+            {
+                !playing ? <button className='play' onClick={togglePlay}><FaRegPlayCircle/></button>:
+                <button className='pause' onClick={togglePlay}><FaRegPauseCircle/></button>
+            }
             <audio src={source}/>
         </div>
     </div>

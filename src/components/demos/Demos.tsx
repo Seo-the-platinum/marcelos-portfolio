@@ -12,7 +12,8 @@ interface demo {
 
 const Demos = () => {
   const [ demos, setDemos ] = useState(demoData)
-   const handlePausePlay = (id: string)=>{
+  const handlePausePlay = (id: string)=>{
+    console.log('this should fire')
     const updatedDemos = demos.map(demo=> {
       if (demo.id === id) {
         if (demo.playing === true) {
