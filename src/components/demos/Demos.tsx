@@ -5,6 +5,7 @@ import './Demo.css'
 
 interface demo {
   id: string;
+  duration: number;
   playing: boolean;
   source: string;
   title: string;

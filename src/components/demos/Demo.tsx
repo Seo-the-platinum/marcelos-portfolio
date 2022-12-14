@@ -1,23 +1,36 @@
 import React, { MouseEventHandler, useEffect, useState } from 'react'
 import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa"
-
+import Slider from './Slider'
 interface DemoProps {
     handlePausePlay: (id: string)=> void;
     id: string;
     pause: (id: string)=> void;
     play: (id: string)=> void;
     playing: boolean;
-    source: string;
+    source: HTMLAudioElement;
     title: string;
 }
 
 const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoProps) => {
+    const [ percentage, setPercentage ] = useState(0)
+    const handleTracking = (e)=> {
+        const secs = Math.floor(e.timeStamp / 1000)
+        const duration = Math.floor(e.path[0].duration)
+        setPercentage((secs / duration) * 100)
+    }
+    source.addEventListener('timeupdate', handleTracking)
+    const onChange = (e: React.SyntheticEvent) => {
+        const value = Math.round(Number((e.target as HTMLInputElement).value))
+        setPercentage(value)
+    }
     const togglePlay = (e: MouseEventHandler) => {
         handlePausePlay(id)
     }
+
     useEffect(()=> {
         playing ? play(id) : pause(id)
     },[playing])
+
 
   return (
     <div className='audioContainer'>
@@ -28,7 +41,7 @@ const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoPr
                     {!playing ? <FaRegPlayCircle/>: <FaRegPauseCircle/>}
                 </button>
             }
-            <audio src={source}/>
+            <Slider percentage={percentage} onChange={onChange}/>
         </div>
     </div>
   )
