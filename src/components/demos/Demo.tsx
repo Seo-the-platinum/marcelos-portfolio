@@ -13,17 +13,21 @@ interface DemoProps {
 
 const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoProps) => {
     const [ percentage, setPercentage ] = useState(0)
-    const handleTracking = (e)=> {
+
+    const handleTracking = (e: React.SyntheticEvent) => {
         const secs = Math.floor(e.timeStamp / 1000)
-        const duration = Math.floor(e.path[0].duration)
+        const duration = Math.floor((e.target as HTMLAudioElement).duration)
         setPercentage((secs / duration) * 100)
     }
     source.addEventListener('timeupdate', handleTracking)
+
     const onChange = (e: React.SyntheticEvent) => {
         const value = Math.round(Number((e.target as HTMLInputElement).value))
         setPercentage(value)
+        source.currentTime = (source.duration / 100) * Number((e.target as HTMLInputElement).value)
+        console.log(percentage)
     }
-    const togglePlay = (e: MouseEventHandler) => {
+    const togglePlay = (e: React.SyntheticEvent) => {
         handlePausePlay(id)
     }
 
