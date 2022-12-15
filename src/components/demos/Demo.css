@@ -1,3 +1,8 @@
+.audioControls {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #dark audio {
     color-scheme: dark;
@@ -25,4 +30,33 @@
     left: 10%;
     position: absolute;
     width: 75%;
+}
+
+#light .playpause {
+    background-color: gray;
+}
+
+.trackSlider {
+    appearance: none;
+    background: linear-gradient(to right, #26024a, #5306a1, #065ea1, #09baeb);
+    border-radius: 10px;
+    border: solid 1px white;
+    height: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #6214e0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+ }
+
+ input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0; /*Removes default border-radius that FF applies*/
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;
 }

@@ -13,19 +13,19 @@ interface DemoProps {
 
 const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoProps) => {
     const [ percentage, setPercentage ] = useState(0)
-
-    const handleTracking = (e: React.SyntheticEvent) => {
-        const secs = Math.floor(e.timeStamp / 1000)
-        const duration = Math.floor((e.target as HTMLAudioElement).duration)
-        setPercentage((secs / duration) * 100)
+    
+    const handleTracking = () => {
+        const secs = Math.floor(source.currentTime)
+        const duration = Math.floor(source.duration)
+        setPercentage((secs / duration * 100))
     }
+
     source.addEventListener('timeupdate', handleTracking)
 
     const onChange = (e: React.SyntheticEvent) => {
         const value = Math.round(Number((e.target as HTMLInputElement).value))
-        setPercentage(value)
         source.currentTime = (source.duration / 100) * Number((e.target as HTMLInputElement).value)
-        console.log(percentage)
+        setPercentage(value)
     }
     const togglePlay = (e: React.SyntheticEvent) => {
         handlePausePlay(id)
@@ -39,9 +39,9 @@ const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoPr
   return (
     <div className='audioContainer'>
         <h3>{title}</h3>
-        <div className="audio">
+        <div className="audioControls">
             {
-                <button className='play/pause' onClick={togglePlay}>
+                <button className='playpause' onClick={togglePlay}>
                     {!playing ? <FaRegPlayCircle/>: <FaRegPauseCircle/>}
                 </button>
             }
