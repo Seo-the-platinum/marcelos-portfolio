@@ -1,10 +1,21 @@
+/* CLASSES */
+.mediaIcon {
+    font-size: 1.5em;
+}
+
 .navbarContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 75px;
-    position: sticky;
-    top: 10px;
+    /* position: sticky;
+    top: 10px; */
+}
+
+.socialMediaLinksContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tab {
@@ -12,22 +23,48 @@
     padding: 0.5em;
 }
 
-#dark .tab:hover {
-    border-color: white;
+.tabsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
 }
-#light .tab:hover {
-    border-color: blue;
+
+/* ID */
+
+#dark .email {
+    color: white;
+}
+
+#dark .mediaIcon {
+    color: white;
 }
 
 #dark .tab:focus {
     outline-color: white;
 }
 
+#dark .tab:hover {
+    border-color: white;
+}
+
+#light .email {
+    color: black;
+}
+
+#light .mediaIcon {
+    color: black;
+}
+
+#light .tab:hover {
+    border-color: blue;
+}
+
 #light .tab:focus {
     outline-color: blue;
 }
 
-.tabsContainer {
-    display: flex;
-    gap: 2%;
+#mediaIcon {
+    size: 2em;
 }
+
+/* MEDIA QUERIES */

@@ -1,9 +1,11 @@
 import React from 'react'
+import './css/views.css'
 
 const About = () => {
   return (
-    <div id='about'>
-      <p>
+    <div className='aboutContainer' id='about'>
+      <h3>About Myself</h3>
+      <p className='aboutMessage'>
         {
         `Today's media is all about being natural and authentic.
         So it's important to be the most true version of yourself when connecting with viewers.

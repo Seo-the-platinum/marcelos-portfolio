@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
-import Switch from 'react-switch'
 import { GlobalContext } from '../../App'
+import Switch from 'react-switch'
+import SocialMediaLinks from './SocialMediaLinks'
 import Tabs from './Tabs'
+import Hamburger from '../hamburger/Hamburger'
 import './navbar.css'
 
 const Navbar = () => {
@@ -15,6 +17,8 @@ const Navbar = () => {
           onChange={context?.toggleTheme}
           uncheckedIcon={false}
           />
+          <Hamburger/>
+          <SocialMediaLinks/>
           <Tabs/>
     </div>
   )

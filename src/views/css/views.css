@@ -1,4 +1,5 @@
 .homeContainer {
+    background-size: 100% auto;
     display: flex;
     flex-direction: column;
 }
@@ -13,4 +14,13 @@
 
 #dark .homeContainer h1 {
     color: white;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#light .aboutMessage {
+    color: black;
 }
