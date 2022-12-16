@@ -6,8 +6,7 @@ import './navbar.css'
 
 const Navbar = () => {
   //need to fix these errors
-    // const {theme, toggleTheme} = useContext(GlobalContext)
-    const context = useContext(GlobalContext)
+  const context = useContext(GlobalContext)
   return (
     <div className='navbarContainer'>
         <Switch 

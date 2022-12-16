@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react'
+import React, { useState, createContext } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './views/Home'
 import About from './views/About'
@@ -9,24 +9,22 @@ import Navbar from './components/navbar/Navbar'
 
 interface AppContextInterface {
   theme: string;
-  toggleTheme: ()=> void;
+  toggleTheme: (e: React.SyntheticEvent<MouseEvent>)=> void;
 }
 export const GlobalContext = createContext<AppContextInterface | null>(null)
 const App = ()=> {
   const [ theme, setTheme ] = useState('light')
-  const toggleTheme = ()=> {
+  const toggleTheme = (e: React.SyntheticEvent<MouseEvent>)=> {
     setTheme(curr=> curr === 'dark' ? 'light' : 'dark')
   }
   return (
     <GlobalContext.Provider value={{theme, toggleTheme}}>
       <div className="App" id={theme}>
         <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/work' element={<Work/>}/>
-        </Routes>
+        <Home/>
+        <About/>
+        <Contact/>
+        <Work/>
       </div>
     </GlobalContext.Provider>
   )

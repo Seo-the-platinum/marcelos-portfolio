@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div id='about'>
       <p>
         {
         `Today's media is all about being natural and authentic.
