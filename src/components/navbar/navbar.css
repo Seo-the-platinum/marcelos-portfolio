@@ -8,18 +8,25 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 75px;
-    /* position: sticky;
-    top: 10px; */
+    overflow: hidden;
+    width: 100%;
 }
 
 .socialMediaLinksContainer {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.switch {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .tab {
-    background-color: rgb(34, 36, 34);
+    background-color: black;
     padding: 0.5em;
 }
 

@@ -11,15 +11,16 @@ const Navbar = () => {
   const context = useContext(GlobalContext)
   return (
     <div className='navbarContainer'>
+      <Hamburger/>
         <Switch 
           checked={context?.theme === 'dark'}
           checkedIcon={false}
+          className='switch'
           onChange={context?.toggleTheme}
           uncheckedIcon={false}
           />
-          <Hamburger/>
-          <SocialMediaLinks/>
-          <Tabs/>
+        <SocialMediaLinks/>
+        {/* Show when we hide hamburger for larger viewports <Tabs/> */}
     </div>
   )
 }
