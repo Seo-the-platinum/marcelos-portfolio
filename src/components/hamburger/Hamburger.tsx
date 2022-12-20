@@ -13,7 +13,7 @@ const Hamburger = () => {
         <button className='hamburgerButton' onClick={toggleMenu}>
             <GiHamburgerMenu className='hamburger'/>
         </button>
-        <HamburgerMenu/>
+        <HamburgerMenu toggle={toggleMenu}/>
     </div>
   )
 }

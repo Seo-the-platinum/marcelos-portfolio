@@ -5,7 +5,7 @@ import './css/views.css'
 
 const Home = () => {
   return (
-    <div className='homeContainer' id='home' style={{backgroundImage: 'url(images/Headshot_4.jpg)'}}>
+    <div className='homeContainer' id='home'>
       <Profile/>
       <Demo/>
     </div>

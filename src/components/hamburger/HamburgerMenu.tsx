@@ -4,13 +4,13 @@ import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 interface show {
     show: boolean;
 }
-const HamburgerMenu = () => {
+const HamburgerMenu = ({toggle}: ()=> void) => {
   return (
     <div className='hamburgerMenu'>
-        <AnchorLink className='tab' href='#home'>Home</AnchorLink>
-        <AnchorLink className='tab' href='#about'>About</AnchorLink>
-        <AnchorLink className='tab' href='#contact'>Contact</AnchorLink>
-        <AnchorLink className='tab' href='#work'>Work</AnchorLink>
+        <AnchorLink className='tab' onClick={toggle} href='#home'>Home</AnchorLink>
+        <AnchorLink className='tab' onClick={toggle} href='#about'>About</AnchorLink>
+        <AnchorLink className='tab' onClick={toggle} href='#contact'>Contact</AnchorLink>
+        <AnchorLink className='tab' onClick={toggle} href='#work'>Work</AnchorLink>
     </div>
   )
 }
