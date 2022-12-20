@@ -1,10 +1,10 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 
-interface show {
-    show: boolean;
+interface toggle {
+    toggle: ()=> void;
 }
-const HamburgerMenu = ({toggle}: ()=> void) => {
+const HamburgerMenu = ({toggle}: toggle) => {
   return (
     <div className='hamburgerMenu'>
         <AnchorLink className='tab' onClick={toggle} href='#home'>Home</AnchorLink>

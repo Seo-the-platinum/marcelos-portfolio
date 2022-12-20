@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='aboutContainer' id='about'>
       <h3>About Myself</h3>
-      <img src='/images/Headshot_4.jpg'/>
+      <img className='aboutImg' src='/images/Headshot_4.jpg'/>
       <p className='aboutMessage'>
         {
         `Today's media is all about being natural and authentic.

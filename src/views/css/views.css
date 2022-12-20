@@ -17,10 +17,29 @@
 }
 
 .aboutContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
+.aboutContainer > h3 {
+    z-index: 1;
+}
+
+.aboutImg {
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+}
+
+.aboutMessage {
+    z-index: 1;
+}
+
 #light .aboutMessage {
     color: black;
+}
+
+#dark .aboutMessage {
+    color: white;
 }
