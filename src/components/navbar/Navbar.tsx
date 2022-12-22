@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <div className='navbarContainer'>
       <Hamburger/>
-        <Switch 
+        {/* <Switch 
           checked={context?.theme === 'dark'}
           checkedIcon={false}
           className='switch'
           onChange={context?.toggleTheme}
           uncheckedIcon={false}
-          />
+          /> */}
         <SocialMediaLinks/>
         {/* Show when we hide hamburger for larger viewports <Tabs/> */}
     </div>

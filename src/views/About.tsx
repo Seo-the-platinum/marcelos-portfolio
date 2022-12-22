@@ -4,7 +4,6 @@ import './css/views.css'
 const About = () => {
   return (
     <div className='aboutContainer' id='about'>
-      <h3>About Myself</h3>
       <img className='aboutImg' src='/images/Headshot_4.jpg'/>
       <p className='aboutMessage'>
         {

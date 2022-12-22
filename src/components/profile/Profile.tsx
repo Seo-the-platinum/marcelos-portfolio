@@ -6,6 +6,7 @@ const Profile = () => {
     <div className='profileContainer'>
       {/* <img className='profilePic' src='images/Headshot.jpeg'/> */}
       <h3>Marcelo Flores</h3>
+      <p style={{fontWeight: 'bold'}}>Voice Over</p>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { MouseEventHandler, useEffect, useState } from 'react'
 import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa"
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import Slider from './Slider'
 interface DemoProps {
     handlePausePlay: (id: string)=> void;
