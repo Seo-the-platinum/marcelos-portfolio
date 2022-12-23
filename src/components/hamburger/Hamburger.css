@@ -1,7 +1,6 @@
 /* CLASSES */
 .hamburgerButton {
     background: none;
-    padding: .25em;
     position: absolute;
     left: 100%;
 }
@@ -28,11 +27,6 @@
     z-index: 1;
 }
 
-.showHamburgerContainer {
-    transform: translateX(0%);
-    transition: transform 300ms cubic-bezier(0.5, 0, .5, 1);
-}
-
 .hamburger {
     font-size: 1.5em;
 }
@@ -46,15 +40,19 @@
     width: 100%;
 }
 
+.showHamburgerContainer {
+    transform: translateX(0%);
+    transition: transform 300ms cubic-bezier(0.5, 0, .5, 1);
+}
+
+.tab {
+    background-clip: text;
+    background: linear-gradient(45deg, rgb(2, 62, 43), rgb(59, 251, 158));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 /* ID */
-
-#dark .hamburger {
-    color: white;
-}
-
-#light .hamburger {
-    color: black;
-}
 
 
 /* MEDIA QUERIES */

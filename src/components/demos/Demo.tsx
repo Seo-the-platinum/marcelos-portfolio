@@ -42,11 +42,14 @@ const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoPr
         <h3>{title}</h3>
         <div className="audioControls">
             {
-                <button className='playpause' onClick={togglePlay}>
+                <button className='playPause' onClick={togglePlay}>
                     {!playing ? <FaRegPlayCircle/>: <FaRegPauseCircle/>}
                 </button>
             }
             <Slider percentage={percentage} onChange={onChange}/>
+            <a className='downloadLink' href={source.src} download={title}>
+                <AiOutlineCloudDownload/>
+            </a> 
         </div>
     </div>
   )

@@ -12,9 +12,11 @@
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -43,26 +45,10 @@
 }
 
 .App {
+  background: black;
   display: flex;
   flex-direction: column;
   gap: 15px;
   min-height: 100vh;
   padding: 1em;
-}
-
-/* #light.App {
-  background: linear-gradient(45deg,#016f15, #04e09b, white);
-} */
-
-/* #dark.App {
-  background: linear-gradient(45deg,#000f07,#012912, #06e49e);
-} */
-
-#light.App {
-  background: linear-gradient(45deg,#04e09b 5%, white 100%);
-}
-
-#dark.App {
-  /* background: linear-gradient(45deg,#00180c 100%, #000000); */
-  background: black;
 }

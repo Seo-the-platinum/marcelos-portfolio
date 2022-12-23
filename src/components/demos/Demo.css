@@ -1,15 +1,8 @@
+/* CLASSES */
 .audioControls {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-}
-
-#dark audio {
-    color-scheme: dark;
-}
-
-#light audio {
-    color-scheme: light;
 }
 
 .demosContainer {
@@ -32,8 +25,37 @@
     width: 75%;
 }
 
-#light .playpause {
-    background-color: gray;
+.downloadLink {
+    color: rgb(1, 142, 93);
+    display: flex;
+    padding: 0;
+    font-size: 1.75em;
+}
+
+.downloadLink:focus {
+    outline: rgb(1, 142, 93);
+}
+
+.downloadLink:hover {
+    border-color:rgb(1, 142, 93);
+}
+
+.playPause {
+    display: flex;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.playPause:focus {
+    outline: rgb(1, 142, 93);
+}
+
+.playPause:hover {
+    border-color: rgb(1, 142, 93);
+}
+
+.sliderContainer {
+    display: flex;
 }
 
 .trackSlider {

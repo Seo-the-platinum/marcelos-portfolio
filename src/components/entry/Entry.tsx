@@ -12,13 +12,14 @@ const WorkEntry = ({title, link, role, type}: EntryProps) => {
     <div className='entryContainer'>
       <h3>{`Project - ${title}`}</h3>
         {
-            type === 'image' ? <img src={link} style={{maxWidth: '100%'}}/> :
+            type === 'image' ? <img className='entryMedia' src={link}/> :
             <iframe
+                className='entryMedia'
                 src={link}
                 title={title} 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
         }
-        <h3>{`Role: ${role}`}</h3>
+        <h3>{`Role - ${role}`}</h3>
     </div>
   )
 }

@@ -1,12 +1,25 @@
-#dark h3 {
-    color: white;
-}
+/* CLASSES */
 
 .entryContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-#light h3 {
-    color: black;
+.entryMedia {
+    max-width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) {
+    .entryMedia {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .entryMedia {
+        width: 60%;
+    }
 }

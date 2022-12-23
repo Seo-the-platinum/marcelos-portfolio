@@ -1,9 +1,14 @@
 /* CLASSES */
+.email {
+    color: white;
+}
 .mediaIcon {
+    color: white;
     font-size: 1.5em;
 }
 
 .navbarContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,6 +22,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .switch {
@@ -28,48 +34,52 @@
     padding: 0.5em;
 }
 
+.tab:focus {
+    outline-color: white;
+}
+
+.tab:hover {
+    border-color: white;
+}
+
 .tabsContainer {
     display: flex;
     justify-content: center;
     gap: 2%;
 }
 
+
 /* ID */
 
-#dark .email {
+#facebook {
     color: white;
+    background-color: rgb(17, 86, 233);
+    border-radius: 5px;
+    padding: 1px;
 }
 
-#dark .mediaIcon {
-    color: white;
+#instagram {
+    background: linear-gradient(30deg, yellow, orange, red, pink, purple);
+    border-radius: 5px;
 }
-
-#dark .tab:focus {
-    outline-color: white;
-}
-
-#dark .tab:hover {
-    border-color: white;
-}
-
-#light .email {
-    color: black;
-}
-
-#light .mediaIcon {
-    color: black;
-}
-
-#light .tab:hover {
-    border-color: blue;
-}
-
-#light .tab:focus {
-    outline-color: blue;
-}
-
-#mediaIcon {
-    size: 2em;
-}
-
 /* MEDIA QUERIES */
+@media screen and (min-width: 300px) {
+    .email {
+        font-size: 1.25em;
+    }
+
+    .mediaIcon {
+        font-size: 2em;
+    }
+
+    .socialMediaLinksContainer {
+        gap: 2%;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 471px) {
+    .socialMediaLinksContainer {
+        width: 70%;
+    }
+}
