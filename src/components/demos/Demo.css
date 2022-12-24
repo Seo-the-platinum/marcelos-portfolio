@@ -44,6 +44,7 @@
     display: flex;
     padding: 0;
     font-size: 1.5em;
+    background: none;
 }
 
 .playPause:focus {
@@ -82,4 +83,12 @@
     background-color: #5cd5eb;
     height: 2rem;
     width: 1rem;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 480px) {
+    .demosContainer {
+        align-self: flex-end;
+    }
 }

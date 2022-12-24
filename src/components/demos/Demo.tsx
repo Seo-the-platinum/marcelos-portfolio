@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa"
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Slider from './Slider'
