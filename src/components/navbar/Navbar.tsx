@@ -5,11 +5,12 @@ import Hamburger from '../hamburger/Hamburger'
 import './navbar.css'
 
 const Navbar = () => {
+  const viewportWidth = window.innerWidth
   return (
     <div className='navbarContainer'>
       <Hamburger/>
         <SocialMediaLinks/>
-        {/* Show when we hide hamburger for larger viewports <Tabs/> */}
+        {viewportWidth > 768 && <Tabs/>}
     </div>
   )
 }

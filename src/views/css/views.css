@@ -26,10 +26,7 @@
 }
 
 .selectedWord {
-    background-color: rgb(1, 1, 125);
-    box-shadow: 0px 0px 5px 5px rgb(1, 1, 125);
-    color: rgb(238, 243, 239);
-    font-family: fantasy;
+    color: rgb(3, 123, 9);
     font-weight: bold;
 }
 
