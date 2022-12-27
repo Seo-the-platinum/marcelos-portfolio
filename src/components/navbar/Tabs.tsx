@@ -1,5 +1,5 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './navbar.css'
 
 const Tabs = () => {
