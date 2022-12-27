@@ -47,3 +47,10 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 769px) {
+    .homeContainer {
+        background-size: cover;
+        min-height: 80vh;
+    }
+}
