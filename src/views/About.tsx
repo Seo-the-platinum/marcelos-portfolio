@@ -5,7 +5,7 @@ const About = () => {
   const windowWidth = window.innerWidth
   return (
     <div className='aboutContainer' id='about'>
-      { window.innerWidth < 480 && <img className='aboutImg' src='/images/Headshot_4.jpg'/>}
+      { windowWidth < 480 && <img className='aboutImg' src='/images/Headshot_4.jpg'/>}
       <p className='aboutMessage'>
         Today's media is all about being <span className='selectedWord'>Natural</span> and <span className='selectedWord'>Authentic</span> .
         So it's important to be the most true version of yourself when connecting with viewers.

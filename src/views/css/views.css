@@ -49,8 +49,23 @@
 }
 
 @media screen and (min-width: 769px) {
+    .aboutMessage {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
     .homeContainer {
         background-size: cover;
         min-height: 80vh;
+    }
+
+    .workContainer > h3 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homeContainer {
+        max-width: 60%;
     }
 }

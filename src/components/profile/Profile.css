@@ -26,3 +26,16 @@
     height: 150px;
     width: 150px;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 769px) {
+    .profileContainer > h3 {
+        font-size: 3em;
+    }
+
+    .profileContainer > p {
+        font-size: 2em;
+    }
+}

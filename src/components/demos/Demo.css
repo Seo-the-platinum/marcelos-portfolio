@@ -101,3 +101,16 @@
         width: 40%;
     }
 }
+
+@media screen and (min-width: 1025px) {
+    .demosContainer {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .demosContainer {
+        right: 15%;
+        width: 20%;
+    }
+}

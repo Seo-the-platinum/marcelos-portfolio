@@ -19,7 +19,20 @@
 }
 
 @media screen and (min-width: 480px) {
-    .entryMedia {
-        width: 60%;
+
+    iframe.entryMedia {
+        height: 200px;
+        width: 400px;
+    }
+
+    img.entryMedia {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    iframe.entryMedia {
+        height: 300px;
+        width: 600px;
     }
 }

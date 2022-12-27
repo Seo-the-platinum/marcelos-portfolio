@@ -7,8 +7,8 @@ const Tabs = () => {
     <div className='tabsContainer'>
         <AnchorLink className='tab' href='#home'>Home</AnchorLink>
         <AnchorLink className='tab' href='#about'>About</AnchorLink>
-        <AnchorLink className='tab' href='#contact'>Contact</AnchorLink>
         <AnchorLink className='tab' href='#work'>Work</AnchorLink>
+        <AnchorLink className='tab' href='#contact'>Contact</AnchorLink>
     </div>
   )
 }
