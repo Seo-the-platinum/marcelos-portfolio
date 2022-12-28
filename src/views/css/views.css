@@ -34,6 +34,9 @@
     background-color: rgb(2, 2, 114);
 }
 
+.workContainer > h3 {
+    color: white;
+}
 /* IDS */
 
 

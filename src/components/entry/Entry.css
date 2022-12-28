@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.entryContainer > h3 {
+    color: white;
+}
+
 .entryMedia {
     max-width: 100%;
 }
