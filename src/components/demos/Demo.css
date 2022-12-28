@@ -1,4 +1,8 @@
 /* CLASSES */
+.audioContainer > h3 {
+    color: white;
+}
+
 .audioControls {
     align-items: center;
     display: flex;
