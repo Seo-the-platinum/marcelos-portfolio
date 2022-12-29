@@ -100,22 +100,22 @@
 
 @media screen and (min-width: 769px) {
     .demosContainer {
-        bottom: 45%;
+        bottom: 35%;
         position: absolute;
         right: 0;
-        width: 40%;
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 1025px) {
     .demosContainer {
-        width: 30%;
+        width: 40%; 
     }
 }
 
 @media screen and (min-width: 1280px) {
     .demosContainer {
         right: 15%;
-        width: 20%;
+        /* width: 20%; */
     }
 }

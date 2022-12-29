@@ -57,9 +57,14 @@
         line-height: 1.5em;
     }
 
+    .headshot {
+        left: -12%;
+        position: relative;
+    }
+
     .homeContainer {
         background-size: cover;
-        min-height: 80vh;
+        /* min-height: 80vh; */
     }
 
     .workContainer > h3 {
