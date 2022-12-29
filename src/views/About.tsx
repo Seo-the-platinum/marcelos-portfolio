@@ -1,8 +1,9 @@
 import React from 'react'
+import ResizeHook from '../utils/ResizeHook'
 import './css/views.css'
 
 const About = () => {
-  const windowWidth = window.innerWidth
+  const windowWidth = ResizeHook()
   return (
     <div className='aboutContainer' id='about'>
       { windowWidth < 480 && <img className='aboutImg' src='/images/Headshot_4.jpg'/>}

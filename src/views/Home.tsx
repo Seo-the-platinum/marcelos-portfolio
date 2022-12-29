@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Profile from '../components/profile/Profile'
 import Demo from '../components/demos/Demos'
+import ResizeHook from '../utils/ResizeHook'
 import './css/views.css'
 
 const Home = () => {
-  const windowWidth = window.innerWidth
+ 
+  const windowWidth = ResizeHook()
   return (
     <div 
       className='homeContainer' 
