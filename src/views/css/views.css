@@ -58,7 +58,8 @@
     }
 
     .headshot {
-        left: -12%;
+        left: -15%;
+        max-width: 80%;
         position: relative;
     }
 

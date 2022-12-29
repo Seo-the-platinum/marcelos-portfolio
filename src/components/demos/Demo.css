@@ -99,11 +99,23 @@
 }
 
 @media screen and (min-width: 769px) {
+    .audioContainer > h3 {
+        font-size: 2em;
+    }
+
     .demosContainer {
         bottom: 35%;
         position: absolute;
         right: 0;
         width: 50%;
+    }
+
+    .downloadLink {
+        font-size: 2em;
+    }
+
+    .playPause {
+        font-size: 2em;
     }
 }
 
