@@ -8,7 +8,7 @@ const About = () => {
     <div className='aboutContainer' id='about'>
       { windowWidth < 480 && <img className='aboutImg' src='/images/Headshot_4.jpg'/>}
       <p className='aboutMessage'>
-        Today's media is all about being <span className='selectedWord'>Natural</span> and <span className='selectedWord'>Authentic</span> .
+        Today's media is all about being <span className='selectedWord'>Natural</span> and <span className='selectedWord'>Authentic</span>.
         So it's important to be the most true version of yourself when connecting with viewers.
         Viewers will feel those genuine emotions in everything Marcelo performs, 
         whether it's a solemn internal monologue read for a PSA, or a playful and innocent character for a kids show,
