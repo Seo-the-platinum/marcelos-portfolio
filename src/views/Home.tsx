@@ -13,7 +13,7 @@ const Home = () => {
       id='home' 
       style={{backgroundImage: windowWidth > 479 && windowWidth < 769 ? 'url(/images/Headshot_4.jpg)': 'none'}}>
       <Profile/>
-      {windowWidth > 769 && <img className='headshot' src='/images/Headshot_4.jpg'/>}
+      {windowWidth > 768 && <img className='headshot' src='/images/Headshot_4.jpg'/>}
       <Demo/>
     </div>
   )
