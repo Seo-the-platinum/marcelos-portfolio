@@ -1,5 +1,11 @@
 export const experience = [
     {
+        link: 'https://www.youtube.com/watch?v=Vxg5t7CwVHE&t=1s',
+        role: 'Shane',
+        title: 'Last Day',
+        type: 'Video'
+    },
+    {
         link: 'images/metaverse101.jpg',
         role: 'Narrator',
         title: 'Metaverse 101',
