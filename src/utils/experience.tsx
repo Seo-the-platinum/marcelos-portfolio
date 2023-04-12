@@ -1,6 +1,6 @@
 export const experience = [
     {
-        link: "https://www.youtube.com-nocookie/embed/Vxg5t7CwVHE",
+        link: "https://www.youtube-nocookie.com/embed/Vxg5t7CwVHE",
         role: 'Shane',
         title: 'Last Day',
         type: 'Video'
