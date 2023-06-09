@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { demoData } from '../../utils/demos'
 import Demo from './Demo'
 import './Demo.css'
