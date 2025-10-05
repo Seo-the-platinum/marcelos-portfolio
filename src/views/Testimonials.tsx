@@ -20,7 +20,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8 p-8">
+    <div className="flex flex-col gap-8 p-8" id="testimonials">
         <h3 className="text-5xl font-semibold">Testimonials</h3>
         <div className="flex flex-col md:flex-row gap-8 md:items-start">
             {testimonials.map((testimonial, index) => (
