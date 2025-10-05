@@ -1,6 +1,6 @@
 const HomeStudio = () => {
     return (
-        <div className="flex flex-col gap-8 p-8" id='work-studio'>
+        <div className="flex flex-col gap-8 p-8" id='home-studio'>
             <h3 className="font-semibold text-4xl">Home Studio</h3>
             <div className='flex flex-col gap-8 md:grid grid-cols-3'>
                 <div className="flex flex-col gap-4">

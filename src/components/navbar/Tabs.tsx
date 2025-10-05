@@ -7,7 +7,7 @@ const Tabs = () => {
         <AnchorLink className='tab' href='#home'>Home</AnchorLink>
         <AnchorLink className='tab' href='#about'>About</AnchorLink>
         <AnchorLink className='tab' href='#projects'>Projects</AnchorLink>
-        <AnchorLink className='tab' href='#work-studio'>Work Studio</AnchorLink>
+        <AnchorLink className='tab' href='#home-studio'>Home Studio</AnchorLink>
         <AnchorLink className='tab' href='#testimonials'>Testimonials</AnchorLink>
         <AnchorLink className='tab' href='#contact'>Contact</AnchorLink>
     </div>

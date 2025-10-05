@@ -10,7 +10,7 @@ const HamburgerMenu = ({toggle}: toggle) => {
         <AnchorLink className='tab' onClick={toggle} href='#home'>Home</AnchorLink>
         <AnchorLink className='tab' onClick={toggle} href='#about'>About</AnchorLink>
         <AnchorLink className='tab' onClick={toggle} href='#projects'>Projects</AnchorLink>
-        <AnchorLink className='tab' onClick={toggle} href='#work-studio'>Work Studio</AnchorLink>
+        <AnchorLink className='tab' onClick={toggle} href='#home-studio'>Home Studio</AnchorLink>
         <AnchorLink className='tab' onClick={toggle} href='#testimonials'>Testimonials</AnchorLink>
         <AnchorLink className='tab' onClick={toggle} href='#contact'>Contact</AnchorLink>
     </div>
