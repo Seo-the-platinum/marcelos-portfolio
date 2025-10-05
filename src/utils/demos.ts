@@ -1,7 +1,8 @@
 
 const audios = {
-    '1': new Audio('sounds/demoSound_1.mp3'),
-    '2': new Audio('sounds/demoSound_2.mp3'),
+    '1': new Audio('sounds/mf-animation-2025.mp3'),
+    '2': new Audio('sounds/mf-interactive-2025.mp3'),
+    '3': new Audio('sounds/demoSound_2.mp3'),
 }
 let currentlyPlaying : string | null;
 const play = (id: string) => {
@@ -33,6 +34,15 @@ export const demoData = [
         play,
         playing: false,
         source: audios[2],
+        title: 'Interactive Demo'
+    },
+    {
+        duration: audios['3'].duration,
+        id: '3',
+        pause,
+        play,
+        playing: false,
+        source: audios[3],
         title: 'Commercial Demo'
     }
 ]

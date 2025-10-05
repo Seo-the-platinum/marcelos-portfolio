@@ -5,24 +5,12 @@
     flex-direction: column;
 }
 
-.aboutImg {
-    opacity: 1;
-    width: 100%;
-}
-
-.aboutMessage {
-    color: white;
-}
-
-.homeContainer {
-    background-repeat: no-repeat;
-    background-size: contain;
+.demoContainer {
     display: flex;
     flex-direction: column;
-}
-
-.homeContainer h1 {
-    color: white;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
 }
 
 .selectedWord {
@@ -41,15 +29,6 @@
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 480px) {
-    .aboutContainer {
-        width: 80%;
-    }
-
-    .homeContainer {
-        width: 80%;
-    }
-}
 
 @media screen and (min-width: 769px) {
     .aboutMessage {
@@ -57,24 +36,7 @@
         line-height: 1.5em;
     }
 
-    .headshot {
-        left: -15%;
-        max-width: 80%;
-        position: relative;
-    }
-
-    .homeContainer {
-        background-size: cover;
-        /* min-height: 80vh; */
-    }
-
     .workContainer > h3 {
         font-size: 3em;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .homeContainer {
-        max-width: 60%;
     }
 }

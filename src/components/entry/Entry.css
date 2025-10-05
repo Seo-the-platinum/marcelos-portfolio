@@ -9,34 +9,3 @@
 .entryContainer > h3 {
     color: white;
 }
-
-.entryMedia {
-    max-width: 100%;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 320px) {
-    .entryMedia {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 480px) {
-
-    iframe.entryMedia {
-        height: 200px;
-        width: 400px;
-    }
-
-    img.entryMedia {
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    iframe.entryMedia {
-        height: 300px;
-        width: 600px;
-    }
-}

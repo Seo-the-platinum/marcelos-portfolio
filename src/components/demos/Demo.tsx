@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa"
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Slider from './Slider'
+
 interface DemoProps {
     handlePausePlay: (id: string)=> void;
     id: string;
@@ -38,8 +39,8 @@ const Demo = ({id, pause, play, playing, source, title, handlePausePlay}: DemoPr
 
 
   return (
-    <div className='audioContainer'>
-        <h3>{title}</h3>
+    <div className='flex flex-col gap-4'>
+        <h3 className="text-2xl font-semibold demo-title">{title}</h3>
         <div className="audioControls">
             {
                 <button className='playPause' onClick={togglePlay}>

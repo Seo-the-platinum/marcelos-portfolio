@@ -14,11 +14,11 @@
     flex-direction: column;
 }
 
-.demosContainer h3 {
+.demo-title{
     position: relative;
 }
 
-.demosContainer h3::after {
+.demo-title::after {
     background: linear-gradient(to right, #26024a, #5306a1, #065ea1, #09baeb);
     border-radius: 4px;
     bottom: -5px;
@@ -92,22 +92,10 @@
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 480px) {
-    .demosContainer {
-        align-self: flex-end;
-    }
-}
 
 @media screen and (min-width: 769px) {
     .audioContainer > h3 {
         font-size: 2em;
-    }
-
-    .demosContainer {
-        bottom: 35%;
-        position: absolute;
-        right: 0;
-        width: 50%;
     }
 
     .downloadLink {
@@ -116,18 +104,5 @@
 
     .playPause {
         font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .demosContainer {
-        width: 40%; 
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .demosContainer {
-        right: 15%;
-        width: 30%;
     }
 }

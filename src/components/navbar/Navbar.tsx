@@ -1,4 +1,3 @@
-import React from 'react'
 import SocialMediaLinks from './SocialMediaLinks'
 import Tabs from './Tabs'
 import Hamburger from '../hamburger/Hamburger'

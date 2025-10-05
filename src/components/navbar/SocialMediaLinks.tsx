@@ -1,18 +1,19 @@
 import React from 'react'
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
 import './navbar.css'
 
 const SocialMediaLinks = () => {
   return (
     <div className='socialMediaLinksContainer'>
-        <a href='https://www.facebook.com/marcelo.m.flores.3'>
-            <FaFacebookF className='mediaIcon' id={'facebook'}/>
+        <a href='https://www.tiktok.com/@marcelo_flores_vo?lang=en'>
+            <FaTiktok className='mediaIcon' id={'tiktok'}/>
         </a>
         <a href='https://www.instagram.com/marchelloflores/'>
             <FaInstagram className='mediaIcon' id={'instagram'}/>
         </a>
-        <p className='email'>Marceloflores0701@gmail.com</p>
+        <a href='mailto:Marceloflores0701@gmail.com'>
+            <FaEnvelope className='mediaIcon' id={'email'}/>
+        </a>
     </div>
   )
 }

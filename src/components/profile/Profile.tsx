@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className='profileContainer'>
       <h3>Marcelo Flores</h3>
-      <p>Voiceover</p>
+      <p>Voice Actor</p>
     </div>
   )
 }
